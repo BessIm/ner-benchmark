@@ -83,7 +83,8 @@ ce sont des propositions à valider.
 └── docs/
     ├── methodology.md
     ├── ner-benchmark.md
-    └── entity-resolution.md
+    ├── entity-resolution.md
+    └── NER_Benchmark_raport_v1.pdf
 ```
 
 ## 4. Installation
@@ -226,7 +227,8 @@ Détail complet dans `results/README.md`.
   configuration de référence, reproductibilité, intégrité scientifique ;
 - `docs/ner-benchmark.md` : modèles testés, catégories, fichiers produits ;
 - `docs/entity-resolution.md` : méthodes de rapprochement, architecture
-  cible, référentiels d'autorité, métriques futures.
+  cible, référentiels d'autorité, métriques futures ;
+- `docs/NER_Benchmark_raport_v1.pdf` : rapport de benchmark (document PDF).
 
 ## 12. Limites
 
