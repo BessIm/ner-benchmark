@@ -13,9 +13,9 @@ Le projet compare plusieurs méthodes pour :
 2. **rapprocher ces mentions** entre elles pour proposer des regroupements
    (résolution d'entités).
 
-Le cas d'étude d'origine est un corpus de transcriptions de radio
-(RhoneFM), mais **le dépôt est générique** : il peut être appliqué à
-n'importe quel corpus de transcriptions.
+Le cas d'étude est un corpus de transcriptions speech-to-text, mais
+**le dépôt est générique** : il peut être appliqué à n'importe quel
+corpus de transcriptions.
 
 ## 2. Deux étapes distinctes
 
@@ -69,20 +69,6 @@ Valeurs par défaut actuelles :
 Ces valeurs sont modifiables en ligne de commande (`--chunk-size`,
 `--overlap`).
 
-### Correctif de troncature GLiNER
-
-Les modèles GLiNER ont une longueur maximale de **384 tokens**
-(`gliner/config.py` : `max_len = 384`). Avec des fenêtres de 2000
-caractères, GLiNER recevait des séquences de ~409 à 447 tokens et
-**tronquait** la fin de chaque fenêtre, ce qui pouvait faire manquer des
-entités.
-
-Les fenêtres GLiNER ont donc été ramenées de `2000 / 300` à
-`1500 / 200` caractères, ce qui reste sous la limite de 384 tokens.
-**Ce changement modifie les résultats** par rapport aux expériences
-initiales : c'est une nouvelle configuration, à re-exécuter et documentée
-ici.
-
 ## 5. Gestion CPU / GPU
 
 Les scripts détectent automatiquement la disponibilité de CUDA :
@@ -106,7 +92,7 @@ Python  : 3.14.4
 PyTorch : 2.14.0+cu132
 CUDA    : disponible
 GPU     : NVIDIA RTX PRO 5000 Blackwell
-VRAM    : 47.3 GB détectés
+VRAM    : 47.3 GB
 ```
 
 Versions des principales bibliothèques lors de ces expériences :

@@ -4,7 +4,7 @@ Comparaison de méthodes d'**extraction d'entités nommées** (NER) et de
 **rapprochement de mentions** sur des transcriptions issues de la
 reconnaissance de la parole (speech-to-text).
 
-Le corpus d'origine est un ensemble de transcriptions de radio (RhoneFM),
+Le corpus d'origine est un ensemble de transcriptions,
 utilisé comme **cas d'étude**. Le dépôt est **générique** : il peut être
 appliqué à n'importe quel corpus de transcriptions, et l'entité validée peut
 ensuite être reliée à n'importe quel référentiel d'autorité (IdRef, Wikidata,
@@ -244,8 +244,7 @@ Détail complet dans `results/README.md`.
 
 Le dépôt est neutre vis-à-vis du référentiel. L'entité validée pourra être
 reliée à IdRef, Wikidata, VIAF, un référentiel interne, ou tout autre
-référentiel d'autorité ou métier. Dans le cas d'étude RhoneFM, le scénario
-envisagé est un rattachement à **IdRef** par les catalogueurs.
+référentiel d'autorité ou métier.
 
 ## 14. Reproductibilité
 

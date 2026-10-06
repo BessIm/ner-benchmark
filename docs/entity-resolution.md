@@ -21,7 +21,7 @@ M. Dupont
 Le **rattachement à un référentiel d'autorité externe** (IdRef, Wikidata,
 VIAF, ...) constitue ensuite l'**Entity Linking** au sens documentaire.
 
-Dans le cas d'étude RhoneFM, le scénario envisagé est :
+Dans le cas d'étude, le scénario envisagé est :
 
 ```
 mentions -> entité interne validée -> IdRef
@@ -157,7 +157,7 @@ ensuite être reliée à :
 - un référentiel interne ;
 - tout autre référentiel d'autorité ou métier.
 
-Dans le cas d'étude RhoneFM, le scénario envisagé est un **rattachement à
+Dans le cas d'étude, le scénario envisagé est un **rattachement à
 IdRef par les catalogueurs**. Cette fonctionnalité **n'est pas encore
 implémentée** dans le benchmark.
 

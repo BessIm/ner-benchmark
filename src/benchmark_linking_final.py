@@ -2,9 +2,8 @@
 """
 Final exploratory benchmark for entity resolution on PERSON entities.
 
-RhoneFM speech-to-text transcriptions are the case study used for the
-experiments, but this script is independent of any specific corpus or
-authority file.
+Speech-to-text transcriptions are used as a case study, but this script is
+independent of any specific corpus or authority file.
 
 Input:
   results/sauerkraut_gliner/*.json
