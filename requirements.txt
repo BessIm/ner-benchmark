@@ -1,0 +1,28 @@
+# Dépendances du benchmark NER / résolution d'entités.
+#
+# Les versions sont volontairement non figées : cela évite de rendre
+# l'installation inutilement fragile. Les versions exactes utilisées pour
+# les expériences de référence sont documentées dans docs/methodology.md.
+#
+# Installation :
+#   python -m pip install -r requirements.txt
+
+# --- Modèles NER et calcul tensoriel ---
+torch
+transformers
+gliner
+sentencepiece
+protobuf
+tiktoken
+
+# --- Traitement de données ---
+pandas
+numpy
+tqdm
+
+# --- Résolution / rapprochement d'entités ---
+rapidfuzz
+Metaphone          # import : from metaphone import doublemetaphone
+scikit-learn
+sentence-transformers
+accelerate

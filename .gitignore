@@ -1,0 +1,64 @@
+# ============================================================
+# Environnements Python
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ============================================================
+# Modèles et caches d'IA
+# Les poids des modèles ne sont jamais distribués dans le dépôt :
+# ils sont téléchargés par les bibliothèques Python depuis leur source.
+# ============================================================
+.cache/huggingface/
+huggingface/
+*.safetensors
+*.bin
+*.h5
+*.msgpack
+*.onnx
+*.ckpt
+*.pt
+*.pth
+
+# ============================================================
+# Données réelles (jamais publiées)
+# ============================================================
+# Transcriptions réelles : seul le README du dossier est versionné.
+transcriptions/*.json
+transcriptions/**/*.json
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.ogg
+*.aac
+
+# ============================================================
+# Résultats générés
+# ============================================================
+# Les synthèses purement numériques sont conservées ; les fichiers qui
+# contiennent des mentions nominatives sont ignorés.
+results/*
+!results/README.md
+!results/comparison.csv
+!results/summary.csv
+
+# ============================================================
+# Divers
+# ============================================================
+*.log
+*.tmp
+.DS_Store
+.idea/
+.vscode/
