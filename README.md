@@ -4,8 +4,7 @@ Comparaison de méthodes d'**extraction d'entités nommées** (NER) et de
 **rapprochement de mentions** sur des transcriptions issues de la
 reconnaissance de la parole (speech-to-text).
 
-Le corpus d'origine est un ensemble de transcriptions,
-utilisé comme **cas d'étude**. Le dépôt est **générique** : il peut être
+Le corpus d'origine est un ensemble de transcriptions utilisé comme **cas d'étude**. Le dépôt est **générique** : il peut être
 appliqué à n'importe quel corpus de transcriptions, et l'entité validée peut
 ensuite être reliée à n'importe quel référentiel d'autorité (IdRef, Wikidata,
 VIAF, référentiel interne ou métier, ...).
